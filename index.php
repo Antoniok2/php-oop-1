@@ -70,20 +70,27 @@ class Film {
     public function __toString() {
         // SE PRESENTE IL REGISTRA
         if ($this -> regista) {
-            return $this -> getFullTitle() . "| " . $this -> regista;
+            return $this -> getFullTitle() . " | " . $this -> regista;
         // IN ASSENZA DEL REGISTA
         }else {
-            return $this -> getFullTitle() . "| " . "Nessun Regista";
+            return $this -> getFullTitle() . " | " . "Nessun Regista";
         }
     }
+}
 
     $film1 = new Film("Matrix");
     $film2 = new Film("Fantozzi 2", "Il ritorno di Fantozzi");
     $film3 = new Film("Peter Pan", "Il ritorno all'isola che non c'è", "Robin Hood");
 
-    echo "Film 1" . ": " . $film1 . "<br>"; 
+    $film2 -> sottotitolo = "Il ritorno di Fantozzi";
+    $film3 -> sottotitolo = "Il ritorno all'isola che non c'è";
+    
+    $film3 -> regista = "Robin Hood";
 
-}
+    echo "Film 1" . ": " . $film1 . "<br>"; 
+    echo "Film 2" . ": " . $film2 . "<br>"; 
+    echo "Film 3" . ": " . $film3 . "<br>"; 
+
 
 ?>
 
