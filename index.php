@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FirstExPHP_DB</title>
+    <title>php-oop-1</title>
 </head>
 
 <body>
     
-<h1>HelloWorld</h1>
+<h1>Film</h1>
 
 <?php
 /**
@@ -84,7 +84,7 @@ class Film {
 
     $film2 -> sottotitolo = "Il ritorno di Fantozzi";
     $film3 -> sottotitolo = "Il ritorno all'isola che non c'è";
-    
+
     $film3 -> regista = "Robin Hood";
 
     echo "Film 1" . ": " . $film1 . "<br>"; 
